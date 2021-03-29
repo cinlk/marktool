@@ -377,7 +377,7 @@ export default {
   .title {
     margin-top: 100px;
     padding-right: 24px;
-    height: 560px;
+    height: 460px;
     margin-bottom: 100px;
     display: flex;
     justify-content: flex-start;
@@ -435,7 +435,7 @@ export default {
     min-width: 400px;
     /* height: 600px; */
     position: absolute;
-    right: 24px;
+    right: 60px;
     top: 140px;
   }
 
@@ -446,7 +446,7 @@ export default {
   .main_item {
     margin-top: 100px;
     display: flex;
-    height: 580px;
+    height: auto;
     justify-content: space-around;
   }
   .main_left {
@@ -466,14 +466,16 @@ export default {
     flex-direction: column;
     justify-content: flex-start;
     align-items: left;
+    text-align: left;
     width:400px;
     height: 400px;
   }
   .main_rightText {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: right;
+    text-align: left;
     width:400px;
     height: 400px;
   }
