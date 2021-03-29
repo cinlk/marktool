@@ -14,7 +14,7 @@
         <div class="title_left" style="position: relative;z-index: 1;">
         <img class="header_img" style="opacity: 0.8;" src="../assets/header.png">
         <div class="title_text">
-          <div style="font-weight: 1000;font-family: Helvetica;letter-spacing: -1.44px;margin: bottom 30px;">
+          <div style="font-weight: bolder;font-family: Helvetica;letter-spacing: -1.44px;margin: bottom 30px;">
             Markhand
           </div>
           <div style="font-size:50px;font-weight:600;">
@@ -26,7 +26,7 @@
               </a>
           <div style="display:flex;height:40px;align-items:center;">
             <div>
-              <a href="markhand_demo/index.html" style="color:black">查看示例</a>
+              <a href="markhand_demo/index.html" target="_blank" style="color:black">查看示例</a>
             </div>
             <div style="background-color: #04DDA3;border-radius:40px;margin-left:20px;">
               <svg style="font-size:40px" class="icon" aria-hidden="true">
@@ -159,26 +159,26 @@
    
     <!-- foot -->
     <div class="footer">
-      <div style="margin-bottom:40px;">
+      <div style="margin-bottom:89px;">
         上海冰丰科技有限公司 沪备ICP19036348号-2
       </div>
-      <div>
-        <div style="margin-bottom:40px;">
+      <div style="margin-bottom:50px;">
+        <div >
           地址
         </div>
-        <div style="font-size:13px;">
+        <div style="font-size:13px; margin-top:20px ">
           上海市浦东新区祥科路58号炬芯研发大楼A座7楼719
         </div>
       </div>
-      <div>
-        <div style="margin-bottom:40px;">
+      <div style="margin-bottom:50px;">
+        <div >
           联系我们
         </div>
-        <div style="font-size:13px;">
+        <div style="font-size:13px; margin-top:20px">
           000-000000
         </div>
       </div>
-      <div style="margin-bottom:40px;">
+      <div style="margin-bottom:65px;">
         <img style="width:40px;" src="../assets/wechat.png" alt="">
       </div>
     </div>
@@ -304,7 +304,7 @@ export default {
   .icon {
     width: 1em;
     height: 1em;
-    vertical-align: -0.15em;
+    vertical-align: -0.2em;
     fill: currentColor;
     overflow: hidden;
   }
@@ -332,17 +332,18 @@ export default {
     height: 40px;
   }
   .login {
-    width: 75px;
-    height: 40px;
-    line-height: 40px;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
     border-right: #D8D8D8 2px solid;
+    margin-right: 15px;
   }
   .register {
     width: 75px;
     height: 40px;
     line-height: 40px;
     background-color: #04DDA3;
-    border-radius:20px 0 20px 20px;
+    border-radius:20px 5px 20px 20px;
   }
   .login:hover {
     cursor: pointer;
@@ -356,9 +357,9 @@ export default {
     height: 50px;
     font-size: 18px;
     text-align: center;
-    line-height: 50px;
+    line-height: 52px;
     background-color: #04DDA3;
-    border-radius:25px 0 25px 25px;
+    border-radius:25px 5px 25px 25px;
   }
 
   .cancelButton {
@@ -409,7 +410,7 @@ export default {
     letter-spacing: -0.63px;
     line-height: 50px;
     background-color: #04DDA3;
-    border-radius:20px 0 20px 20px;
+    border-radius:20px 5px 20px 20px;
     /* margin-left: 300px; */
     text-align: center;
     margin-right: 70px;
@@ -421,9 +422,9 @@ export default {
     display: block;
     color: #000000;
     font-family: PingFangSC-Regular;
-    line-height: 80px;
+    line-height: 50px;
     background-color: #04DDA3;
-    border-radius:20px 0 20px 20px;
+    border-radius:20px 5px 20px 20px;
     /* margin-left: 300px; */
     text-align: center;
     text-decoration-line: none;
@@ -505,20 +506,20 @@ export default {
   .download_sketch {
 
     margin: 10px auto;
-    width: 250px;
-    height: 70px;
-    font-size: 20px;
+    width: 174px;
+    height: 50px;
+    font-size: 15px;
     text-align: center;
-    line-height: 30px;
+    line-height: 20px;
     align-items: center;
     justify-content: start;
     background-color: #04DDA3;
-    border-radius:25px 0 25px 25px;
+    border-radius:20px 5px 20px 20px;
     
   }
   .footer {
     width: 100%;
-    height: 300px;
+    height: 250px;
     margin-top: 100px;
     background-color: #3C3D40;
     color: #fff;
