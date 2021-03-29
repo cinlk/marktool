@@ -390,6 +390,7 @@ export default {
     font-size:70px;
     color:#151D31;
     text-align: left;
+    margin-top: 50px;
   }
   .download_area {
     position: absolute;
