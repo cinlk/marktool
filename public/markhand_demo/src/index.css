@@ -211,7 +211,7 @@ body {
     min-width: 1024px;
     font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
     font-size: 12px;
-    color: #1577DA;
+    color: #989A9C;
     background: #191919;
     letter-spacing: 1px;
     overflow: hidden;
@@ -607,7 +607,7 @@ main {
 }
 
 #inspector .tab li.select {
-    background-color: rgba(32, 72, 185, .5);
+    background-color: rgba(255, 255, 255, .05);
 }
 
 #inspector .tab li.select:before {
@@ -997,19 +997,17 @@ main {
 }
 
 .inspector h2 {
-    font-size: 25px;
+    font-size: 12px;
     line-height: 24px;
     padding: 12px 16px;
     text-align: center;
-    color: white;
 }
 
 .inspector h3 {
     /* height: 32px; */
-    font-size: 15px;
+    font-size: 12px;
     line-height: 32px;
     padding: 0 16px;
-    color: white;
     background-image: linear-gradient(90deg, rgba(0, 4, 9, .32) 0, rgba(0, 2, 4, 0) 100%);
 }
 
@@ -1283,7 +1281,7 @@ main {
 .flow-starts .title h3 em {
     font-style: normal;
     font-size: 10px;
-    color: #1577DA;
+    color: #989A9C;
 }
 
 .pages-select h3:after {
