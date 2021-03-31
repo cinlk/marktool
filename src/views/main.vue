@@ -59,13 +59,18 @@
             一键导出HTML
             </div>
             <div style="margin-top:50px;display:flex;align-items:center;font-size:16px;">
-              <div style="width:10px;height:10px;border-radius:50%;background-color:#878BAD;" />
+              <div  >
+                <img style="width:10px;height:10px;border-radius:50%;background-color:#878BAD;" src="../assets/ellipse.png">
+              </div>
+
               <div style="text-align:left;margin-left:20px;">
                 一键自动生成 HTML 页面，离线下检查所有设计细节，包括 CSS 样式。
               </div>
             </div>
             <div style="margin-top:50px;display:flex;align-items:center;font-size:16px;">
-              <div style="width:10px;height:10px;border-radius:5px;background-color:#878BAD" />
+              <div  >
+                <img style="width:10px;height:10px;border-radius:50%;background-color:#878BAD;" src="../assets/ellipse.png">
+              </div>
               <div style="text-align:left;margin-left:20px;">点击工具栏上的导出HTML按钮或使用快捷键control ⌃ + shift ⇧ + E。</div>
             </div>
           </div>
@@ -87,13 +92,17 @@
             标注区域&坐标
             </div>
             <div style="margin-top:50px;display:flex;align-items:center;font-size:16px;">
-              <div style="width:10px;height:10px;border-radius:5px;background-color:#878BAD;" />
+              <div  >
+                <img style="width:10px;height:10px;border-radius:50%;background-color:#878BAD;" src="../assets/ellipse.png">
+              </div>
               <div style="text-align:left;margin-left:20px;">
                 在图层上标记出坐标位置以及显示的区域。
               </div>
             </div>
             <div style="margin-top:50px;display:flex;align-items:center;font-size:16px;">
-              <div style="width:10px;height:10px;border-radius:5px;background-color:#878BAD" />
+              <div  >
+                <img style="width:10px;height:10px;border-radius:50%;background-color:#878BAD;" src="../assets/ellipse.png">
+              </div>
               <div style="text-align:left;margin-left:20px;">点击工具栏上的坐标和区域按钮或使用快捷键control ⌃ + shift ⇧ + 1和6。</div>
             </div>
           </div>
@@ -108,13 +117,17 @@
             标注间隔&尺寸
             </div>
             <div style="margin-top:50px;display:flex;align-items:center;font-size:16px;">
-              <div style="width:10px;height:10px;border-radius:5px;background-color:#878BAD;" />
+              <div  >
+                <img style="width:10px;height:10px;border-radius:50%;background-color:#878BAD;" src="../assets/ellipse.png">
+              </div>
               <div style="text-align:left;margin-left:20px;">
                 选中画板上图层，设置图层大小以及周围间隔距离
               </div>
             </div>
             <div style="margin-top:50px;display:flex;align-items:center;font-size:16px;">
-              <div style="width:10px;height:10px;border-radius:5px;background-color:#878BAD" />
+              <div  >
+                <img style="width:10px;height:10px;border-radius:50%;background-color:#878BAD;" src="../assets/ellipse.png">
+              </div>
               <div style="text-align:left;margin-left:20px;">点击工具栏上的间隔按钮或使用快捷键control ⌃ + shift ⇧ + 2和3 </div>
             </div>
           </div>
@@ -136,13 +149,17 @@
             备注切图
             </div>
             <div style="margin-top:50px;display:flex;align-items:center;font-size:16px;">
-              <div style="width:10px;height:10px;border-radius:5px;background-color:#878BAD;" />
+              <div  >
+                <img style="width:10px;height:10px;border-radius:50%;background-color:#878BAD;" src="../assets/ellipse.png">
+              </div>
               <div style="text-align:left;margin-left:20px;">
                 添加文字，设计文字为切图的注释
               </div>
             </div>
             <div style="margin-top:50px;display:flex;align-items:center;font-size:16px;">
-              <div style="width:10px;height:10px;border-radius:5px;background-color:#878BAD" />
+              <div  >
+                <img style="width:10px;height:10px;border-radius:50%;background-color:#878BAD;" src="../assets/ellipse.png">
+              </div>
               <div style="text-align:left;margin-left:20px;">点击工具栏上的 间隔 按钮或使用快捷键control ⌃ + shift ⇧ + 6 </div>
             </div>
           </div>
@@ -319,8 +336,8 @@ export default {
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 512px;
-    height: 414px;
+    width: 466px;
+    height: 514px;
     opacity: 0.5;
   }
   .login_register {
