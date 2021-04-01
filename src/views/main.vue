@@ -192,7 +192,7 @@
           联系我们
         </div>
         <div style="font-size:13px; margin-top:20px">
-          000-000000
+          hr@bfengtech.com
         </div>
       </div>
       <div style="margin-bottom:65px;">
