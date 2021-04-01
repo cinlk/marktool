@@ -186,6 +186,8 @@
         <div style="font-size:13px; margin-top:20px ">
           上海市浦东新区祥科路58号炬芯研发大楼A座7楼719
         </div>
+
+       
       </div>
       <div style="margin-bottom:50px;">
         <div >
@@ -194,11 +196,18 @@
         <div style="font-size:13px; margin-top:20px">
           hr@bfengtech.com
         </div>
+        
       </div>
       <div style="margin-bottom:65px;">
         <img style="width:40px;" src="../assets/wechat.png" alt="">
       </div>
     </div>
+
+
+       <div style="font-size:18px; padding-bottom:20px; background-color:#3C3D40;">
+          <a href="https://beian.miit.gov.cn/" target="_blank" style="color:red">沪ICP备18044123号-5</a>
+       </div>
+
       <!-- 登录注册弹窗 -->
       <el-dialog
         :visible.sync="login_status"
