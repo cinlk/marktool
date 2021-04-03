@@ -1,0 +1,114 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>申请表单</title>
+</head>
+<style type="text/css">
+
+*{ padding:0; margin:0;}
+html{height: 100%;}
+body{ font-size:12px; min-width:900px;  font-family:'微软雅黑';}
+a{ color:#222; text-decoration:none;}
+ 
+.clearfix:after{ clear:both; display:block; content:'';}
+.clearfix{ zoom:1;}
+.wrap{ width:1000px; margin:0 auto; }
+input:focus,textarea:focus{box-shadow:0 0 3px 1px rgba(32, 127, 179, 0.4);outline: 0 none;}
+.bitian{ color:#dc2b2b;}
+
+.register-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-self: center;
+    width:420px; 
+    border:1px solid #cccccc; 
+    box-sizing: border-box;
+    margin:0px auto 0px; 
+    height:422px;  
+    padding:30px,60px;
+    background:white;
+    margin-top: 50px;
+
+}
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 300px;
+    margin-top: 30px;
+    
+}
+.title {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 30px;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.description {
+    font-size: 14px;
+    position: relative; 
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 300px;
+}
+.label_text {
+    font-size: 14px; 
+    text-align:left; 
+    line-height: 18px;
+    width: 180px; 
+    color:#222222; 
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.input_box {
+    float:left;
+    padding-left:10px; 
+    border:1px solid #ccc; 
+    height:30px; 
+    font-size:14px; 
+    color:#999999;
+    width: 500px;
+}
+</style>
+
+<body>
+ 
+    <div class="register-box">
+        <h2 class="title">私有化部署申请</h2>   
+        <div class="description">请花一点时间填写如下表单内容，我们的实施顾问会在1天内和您联系</div>
+        <div class="content">
+        	<label class="label_text"><em class="bitian">*</em>企业名称</label>
+            	<input type="text" class="input_box" id="reg_info_company"/>
+             
+        </div>
+      
+   
+        
+        <div class="content">
+        	<label class="label_text"><em class="bitian">*</em>联系人</label>
+            	<input type="text" class="input_box"  id="reg_info_name" />
+          
+        </div>
+
+        <div class="content">
+            <label class="label_text"><em class="bitian">*</em>手机号</label>
+               <input type="text" class="input_box" id="login_phone" />
+         
+        </div>
+        <div class="submit">
+        	<label class="register-box-con2-box-left"></label>
+            <div class="register-box-con2-box-right">
+            	<input type="submit" value="提交申请" class="login-box-cen-form-button w380" id="reg_info_submit" />
+            </div>
+        </div>
+         	
+</div>	
+
+
+</body>
+
+</html>>

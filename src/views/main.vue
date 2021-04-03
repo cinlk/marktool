@@ -176,36 +176,82 @@
    
     <!-- foot -->
     <div class="footer">
-      <div style="margin-bottom:89px;">
-        上海冰丰科技有限公司 沪备ICP19036348号-2
-      </div>
-      <div style="margin-bottom:50px;">
-        <div >
-          地址
-        </div>
-        <div style="font-size:13px; margin-top:20px ">
-          上海市浦东新区祥科路58号炬芯研发大楼A座7楼719
+      <div style="margin-bottom:89px; display:flex;flex-direction: column;">
+        <div class="item">
+           <img style="width: 20px; height: 20px; margin-right:10px" src="../assets/privateDepoly.png">
+            <div style="color: #FFFFFF;letter-spacing: 0; font-family: PingFangSC-Medium;font-size: 20px">
+              
+            <a href="/deploy.html" target="_blank">私有化部署</a>
+             
+            </div>
         </div>
 
-       
-      </div>
-      <div style="margin-bottom:50px;">
-        <div >
-          联系我们
+        <div class="item_text">
+              私有化方案介绍
         </div>
-        <div style="font-size:13px; margin-top:20px">
-          hr@bfengtech.com
-        </div>
-        
       </div>
-      <div style="margin-bottom:65px;">
+    
+      <div style="margin-bottom:89px; display:flex; flex-direction: column;">
+        <div class="item">
+          <img style="width: 20px; height: 20px; margin-right:10px" src="../assets/aboutus.png">
+          <div style="color: #FFFFFF;letter-spacing: 0;font-family: PingFangSC-Medium;font-size: 20px" >关于我们</div>
+        </div>
+        <div class="item_text">
+          公司介绍
+        </div>
+
+      </div>
+
+
+      <div style="margin-bottom:89px; display:flex; flex-direction: column;">
+        <div class="item">
+           <img style="width: 20px; height: 20px; margin-right:10px" src="../assets/recruite.png">
+
+           <div style="color: #FFFFFF;letter-spacing: 0;font-family: PingFangSC-Medium;font-size: 20px">
+            公司招聘
+           </div>
+        </div>
+         <div class="item_text">
+            招聘信息
+          </div>
+      </div>
+     
+      <div style="margin-bottom:89px; display:flex; flex-direction: column;">
+        <div class="item">
+           <img style="width: 20px; height: 20px; margin-right:10px" src="../assets/email.png">
+
+           <div style="color: #FFFFFF;letter-spacing: 0;font-family: PingFangSC-Medium;font-size: 20px">
+            公司邮箱
+           </div>
+        </div>
+         <div class="item_text">
+            hr@bfengtech.com
+          </div>
+      </div>
+
+
+
+      <div style="margin-bottom:89px; display:flex; flex-direction: column;">
+        <div class="item">
+           <img style="width: 20px; height: 20px; margin-right:10px" src="../assets/address.png">
+
+           <div style="color: #FFFFFF;letter-spacing: 0;font-family: PingFangSC-Medium;font-size: 20px">
+            公司地址
+           </div>
+        </div>
+         <div class="item_text">
+           上海浦东新区祥科路58号A座719
+          </div>
+      </div>
+
+      <!-- <div style="margin-bottom:65px;">
         <img style="width:40px;" src="../assets/wechat.png" alt="">
-      </div>
+      </div> -->
     </div>
 
 
        <div style="font-size:18px; padding-bottom:20px; background-color:#3C3D40;">
-          <a href="https://beian.miit.gov.cn/" target="_blank" style="color:red">沪ICP备18044123号-5</a>
+          <a href="https://beian.miit.gov.cn/" target="_blank" class="legal">上海冰丰科技有限公司 沪ICP备18044123号-5</a>
        </div>
 
       <!-- 登录注册弹窗 -->
@@ -557,5 +603,36 @@ export default {
     align-items: center;
     font-size: 18px;
     text-align: left;
+  }
+
+  .legal {
+    width: 412px;
+    height: 28px;
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: rgba(255,255,255,0.41);
+    letter-spacing: 0;
+    font-weight: 500;
+    text-decoration-line: none;
+  }
+  .item {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+  }
+  .item_text {
+    position: absolute;
+    width: 136px;
+    font-family: PingFangSC-Medium;
+    font-size: 10px;
+    color: rgba(255,255,255,0.41);
+    letter-spacing: 0;
+    font-weight: 500;
+    margin-top: 40px;
+    text-align: left;
+    margin-left: 31px;
+    
+
+    
   }
 </style>
