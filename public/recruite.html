@@ -1,0 +1,164 @@
+<html>
+  <head></head>
+  <style type="text/css">
+  
+  .content {
+    position: relative;
+  }
+
+  .header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 80%;
+    margin: 0 auto;
+    background-color: red;
+  }
+
+  .icon {
+   width: 64px;
+   height: 64px;
+  
+  }
+
+  .login_register {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    width: 180px;
+    height: 40px;
+  }
+
+  .login {
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    border-right: #D8D8D8 2px solid;
+    margin-right: 15px;
+  }
+  .register {
+    width: 75px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #04DDA3;
+    border-radius:20px 5px 20px 20px;
+  }
+
+  .main {
+    width: 80%;
+    margin: 100px auto;
+    background-color: white;
+  }
+  .footer{
+    width: 100%;
+    height: 250px;
+    margin-top: 100px;
+    background-color: #3C3D40;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    text-align: left;
+    
+  }
+
+  
+
+  </style>
+  <body>
+    <div class="content">
+      <div class="header">
+
+        <div class="icon">
+          <img src="../src/assets/icon.png">
+        </div>
+        <div class="login_register">
+          <div class="login" @click="handleClickLogin">登录</div>
+          <div class="register" @click="handleClickRegister">注册</div>
+        </div>  
+
+      </div>
+
+
+      <div class="main">
+
+      </div>
+      <div class="footer">
+
+        <div style="margin-bottom:89px; display:flex;flex-direction: column;">
+          <div class="item">
+             <img style="width: 20px; height: 20px; margin-right:10px" src="../assets/privateDepoly.png">
+              <div style="color: #FFFFFF;letter-spacing: 0; font-family: PingFangSC-Medium;font-size: 20px">
+              私有化部署
+              </div>
+          </div>
+  
+          <div class="item_text">
+                <a href="deploy/deploy.html" target="_blank" style="color: rgba(255,255,255,0.41);
+                text-decoration-line: none;">私有化方案介绍</a>
+          </div>
+        </div>
+      
+        <div style="margin-bottom:89px; display:flex; flex-direction: column;">
+          <div class="item">
+            <img style="width: 20px; height: 20px; margin-right:10px" src="../assets/aboutus.png">
+            <div style="color: #FFFFFF;letter-spacing: 0;font-family: PingFangSC-Medium;font-size: 20px" >关于我们</div>
+          </div>
+          <div class="item_text">
+            公司介绍
+          </div>
+  
+        </div>
+  
+  
+        <div style="margin-bottom:89px; display:flex; flex-direction: column;">
+          <div class="item">
+             <img style="width: 20px; height: 20px; margin-right:10px" src="../assets/recruite.png">
+  
+             <div style="color: #FFFFFF;letter-spacing: 0;font-family: PingFangSC-Medium;font-size: 20px">
+              公司招聘
+             </div>
+          </div>
+           <div class="item_text">
+              <a href="recruite.html" target="_blank" style="color: rgba(255,255,255,0.41);
+                text-decoration-line: none;">招聘信息</a>
+            </div>
+        </div>
+       
+        <div style="margin-bottom:89px; display:flex; flex-direction: column;">
+          <div class="item">
+             <img style="width: 20px; height: 20px; margin-right:10px" src="../assets/email.png">
+  
+             <div style="color: #FFFFFF;letter-spacing: 0;font-family: PingFangSC-Medium;font-size: 20px">
+              公司邮箱
+             </div>
+          </div>
+           <div class="item_text">
+              hr@bfengtech.com
+            </div>
+        </div>
+  
+  
+  
+        <div style="margin-bottom:89px; display:flex; flex-direction: column;">
+          <div class="item">
+             <img style="width: 20px; height: 20px; margin-right:10px" src="../assets/address.png">
+  
+             <div style="color: #FFFFFF;letter-spacing: 0;font-family: PingFangSC-Medium;font-size: 20px">
+              公司地址
+             </div>
+          </div>
+           <div class="item_text">
+             上海浦东新区祥科路58号A座719
+            </div>
+        </div>
+    </div>
+
+    <div style="font-size:18px; padding-bottom:20px; background-color:#3C3D40;">
+      <a href="https://beian.miit.gov.cn/" target="_blank" class="legal">上海冰丰科技有限公司 沪ICP备18044123号-5</a>
+   </div>
+
+  </body>
+</html>
