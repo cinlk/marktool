@@ -180,14 +180,13 @@
         <div class="item">
            <img style="width: 20px; height: 20px; margin-right:10px" src="../assets/privateDepoly.png">
             <div style="color: #FFFFFF;letter-spacing: 0; font-family: PingFangSC-Medium;font-size: 20px">
-              
-            <a href="/deploy.html" target="_blank">私有化部署</a>
-             
+            私有化部署
             </div>
         </div>
 
         <div class="item_text">
-              私有化方案介绍
+              <a href="deploy/deploy.html" target="_blank" style="color: rgba(255,255,255,0.41);
+              text-decoration-line: none;">私有化方案介绍</a>
         </div>
       </div>
     
@@ -212,7 +211,7 @@
            </div>
         </div>
          <div class="item_text">
-            招聘信息
+            <router-link to="/recruite" >招聘信息</router-link>
           </div>
       </div>
      
@@ -299,6 +298,7 @@
 
 <script>
 export default {
+  name: "main",
   data() {
     return {
       login_status: false,

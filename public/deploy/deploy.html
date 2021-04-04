@@ -2,6 +2,7 @@
 <head>
 <meta charset="utf-8">
 <title>申请表单</title>
+<script src="./jquery.js"></script>
 </head>
 <style type="text/css">
 
@@ -73,42 +74,54 @@ input:focus,textarea:focus{box-shadow:0 0 3px 1px rgba(32, 127, 179, 0.4);outlin
     color:#999999;
     width: 500px;
 }
+.submit {
+    display: block;
+    color: white;
+    background-color: rgba(69, 157, 245);
+    border: none;
+    width: 300px;
+    height: 36px;
+    font-size: 14px;
+    outline: none;
+    margin-top: 40px;
+
+}
 </style>
 
 <body>
  
     <div class="register-box">
         <h2 class="title">私有化部署申请</h2>   
-        <div class="description">请花一点时间填写如下表单内容，我们的实施顾问会在1天内和您联系</div>
+        <div class="description">请花一点时间填写如下表单内容</div>
         <div class="content">
         	<label class="label_text"><em class="bitian">*</em>企业名称</label>
-            	<input type="text" class="input_box" id="reg_info_company"/>
+            	<input type="text" class="input_box" id="company"/>
              
         </div>
       
-   
-        
         <div class="content">
         	<label class="label_text"><em class="bitian">*</em>联系人</label>
-            	<input type="text" class="input_box"  id="reg_info_name" />
+            	<input type="text" class="input_box"  id="name" />
           
         </div>
 
         <div class="content">
             <label class="label_text"><em class="bitian">*</em>手机号</label>
-               <input type="text" class="input_box" id="login_phone" />
+               <input type="text" class="input_box" id="phone" />
          
         </div>
-        <div class="submit">
-        	<label class="register-box-con2-box-left"></label>
-            <div class="register-box-con2-box-right">
-            	<input type="submit" value="提交申请" class="login-box-cen-form-button w380" id="reg_info_submit" />
-            </div>
-        </div>
+         
+        <input type="submit" value="提交申请" class="submit"  onclick="apply()"  id="info_submit" />
+       
          	
 </div>	
 
+<script>
+     function apply() {
+        alert("成功");
+   }
 
+</script>
 </body>
 
 </html>>
