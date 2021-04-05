@@ -78,7 +78,7 @@
           <img style="width: 20px; height: 20px; margin-right:10px" src="../assets/aboutus.png">
           <div style="color: #FFFFFF;letter-spacing: 0;font-family: PingFangSC-Medium;font-size: 20px" >关于我们</div>
         </div>
-        <div class="item_text" @click="gotoAboutus">
+        <div class="item_text"  style="cursor:pointer" @click="gotoAboutus">
           公司介绍
         </div>
 
@@ -93,7 +93,7 @@
             公司招聘
            </div>
         </div>
-         <div class="item_text" @click="gotoRecruite">
+         <div class="item_text"  style="cursor:pointer" @click="gotoRecruite">
             招聘信息
           </div>
       </div>
