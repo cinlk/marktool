@@ -7,7 +7,7 @@
         <div class="register" @click="handleClickRegister">注册</div>
       </div>     
     </div>
-
+     
     <!-- title -->
     <div class="title">
       <div style="flex:1">
@@ -195,7 +195,7 @@
           <img style="width: 20px; height: 20px; margin-right:10px" src="../assets/aboutus.png">
           <div style="color: #FFFFFF;letter-spacing: 0;font-family: PingFangSC-Medium;font-size: 20px" >关于我们</div>
         </div>
-        <div class="item_text">
+        <div class="item_text" @click="gotoAboutus">
           公司介绍
         </div>
 
@@ -210,8 +210,8 @@
             公司招聘
            </div>
         </div>
-         <div class="item_text">
-            <router-link to="/recruite" >招聘信息</router-link>
+         <div class="item_text" @click="gotoRecruite">
+            招聘信息
           </div>
       </div>
      
@@ -291,14 +291,17 @@
         </div>
       </el-dialog>
     
+     
   </div>
 
   
 </template>
 
 <script>
+
 export default {
   name: "main",
+  inject:["reload"],
   data() {
     return {
       login_status: false,
@@ -344,6 +347,29 @@ export default {
     },
     handleClickChange() {
       this.register_status = !this.register_status
+    },
+    gotoRecruite( ){
+      
+        if (this.$route.name != "recruite"){
+          let url = this.$router.resolve(
+            {
+              path: "/recruite"
+            }
+          )
+          this.reload()
+          window.open(url.href, '_blank')          
+        }       
+    },
+    gotoAboutus() {
+       if (this.$route.name != "aboutus"){
+          let url = this.$router.resolve(
+            {
+              path: "/aboutus"
+            }
+          )
+          this.reload()
+          window.open(url.href, '_blank')          
+        } 
     }
   }
 }

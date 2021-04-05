@@ -2,6 +2,7 @@
   <div class="content">
     <!-- header -->
     <div class="header">
+
       <div>
       <img src="../assets/icon.png" style="width: 40px; height: 30px;"/>
       </div>  
@@ -11,52 +12,63 @@
       </div>     
     </div>
      
-     <div class="main">
-          <div class="join">
-              <div class="banner_img">
-                <img src="../assets/banner.png" style="width:100%; height:100%">
+   <div class="main">
+       <div class="bj_aboutus">
+            <div class="banner_img">
+                <img src="../assets/bj_aboutus.png" style="width:100%; height:100%">
                   <div class="banner_content">
-                  <div class="title">招贤纳士</div>
-                  <div class="english_title" >COMPANY RECRUITMENT</div>
-                  <div class="subtitle">一 JOIN US</div>
+                  <div class="title">公司简介</div>
+                  <div class="english_title" >COMPANY PROFILE</div>
+                  <div class="subtitle">一 What we do</div>
                 </div> 
               </div>
-          </div>
-           
-          <div class="tag">
-                <img src="../assets/recruitecircle.png" style="width: 327px;height: 70px;opacity: 0.9;">
-                <div class="hot_title">热招职位</div>
-                <div class="hot_eng_title">一 HOT JOB 一</div>    
-          </div> 
+       </div>
+        <div class="content_aboutus">
+            <div class="us_text">关于我们</div>
+            <div class="us_eng">一 BOUT US 一</div>
+            <div class="us_detail">上海冰丰科技有限公司,是专门为企业、政府提供数字化软件云综合解決方案的公司。企业数字化是未来的大趋势,以新基建代表的数字化浪潮将为企业提升效益的同时节省更多的成本。我们公司依托北京大学实验室及北京和上海兄弟合作企业,通过自助研发的一套" Apilink-基于定义高可靠软件接口的分层开发的软件系统平台”,从云服务、应用层等开发抽象,可以为政府、企业的数字化软件开发提供快速及保质保量的软件服务。我们提供的服务包括智慧城市、智慧楼宇、智慧物联网云、企业办公效率软件等。团队核心成员来自北京大学及Top互联网企业。</div>
+            <div class="us_imgs">
+              
+                <img src="../assets/e1.png" style="float: left; width: 30%;"/>
+                <img src="../assets/e2.png" style="float: left; width: 30%;"/>
+                <img src="../assets/e3.png" style="float: left; width: 30%;"/>
+            </div>
+        </div>
 
-          <div class="job_detail">
-               <div class="job_img">
-                  <img src="../assets/jobimg.png" style="width: 100%;height: 100%;">
-                  <div class="job_description">
-                      <div class="wrap">
-                          <img src="../assets/rectangle.png" style="width:100%; height:50%; align-self:flex-end"/>
-                          <div class="d1" >招聘岗位</div>
-                      </div>
-                      <div class="d2">项目负责人</div>
-                      <div class="d2">运营管理人员</div>
-                      <div class="d2">UI设计师</div>
-                      <div class="wrap"  style="margin-top:40px">
-                          <img src="../assets/rectangle.png" style="width:100%; height:50%; align-self:flex-end;"/>
-                         <div class="d1">岗位要求</div>
-                      </div>
-                      <div class="d2" style="margin-top:20px">有自驱能力，对项目认真负责，沟通能力强，能清晰表达自我，传递自我价值</div>
-                      <div class="wrap" style="margin-top:40px">
-                          <img src="../assets/rectangle.png" style="width:100%; height:50%; align-self:flex-end;"/>
-                            <div class="d1" >公司福利</div>
-                      </div>
+        <div class="coperations">
+               <div class="coper_title" >合作伙伴</div>
+               <div class="coper_eng_title">COOPERATIVE PARTNER</div>
+               <div class="coper_imgs">
+                    <img src="../assets/logo_1.png" style="float: left; width: 25%;"/> 
+                    <img src="../assets/logo_2.png" style="float: left; width: 40%;"/> 
+                    <img src="../assets/logo_3.png" style="float: left; width: 25%;"/> 
+                    <img src="../assets/logo_4.png" style="float: left; width: 25%;"/> 
+                    <img src="../assets/logo_5.png" style="float: left; width: 40%;"/>
+                    <img src="../assets/logo_6.png" style="float: left; width: 25%;"/>    
+               </div> 
+        </div>
 
-                      <div class="d2" style="margin-top:20px">六险一金，免费餐补，加班福利，免费下午茶</div>
-                  </div>
-               </div>     
-          </div>
+       
+        <div class="slogan_content">
+           <img src="../assets/bj_2.png" style="width: 100%; height: 100%"/>
+           <div class="tags">
+                 <div class="tag_content">
+                      <div class="t1">更安全</div>
+                      <div class="t2">More secure</div>
+                 </div>
+                 <div class="tag_content">
+                      <div class="t1">更智慧</div>
+                      <div class="t2">More intelligent</div>
+                 </div>
+                 <div class="tag_content">
+                      <div class="t1">更高效</div>
+                      <div class="t2">More efficient</div>
+                 </div>
+           </div>
+        </div>
 
-     </div>
-   
+   </div>
+
     <!-- foot -->
     <div class="footer">
       <div style="margin-bottom:89px; display:flex;flex-direction: column;">
@@ -355,86 +367,135 @@ export default {
   }
 
 
-
+  
   .main {
     width: 100%;
-    margin: 40px auto;
+    margin: 20px auto;
   }
-  .join {
+
+  .bj_aboutus {
     display: flex;
     height: auto;
-
   }
+
   .banner_img {
     position: relative;
     width: auto;
     height: auto;
     background: #00B578;
   }
-
-
-  .banner_content {
+  .banner_content{
     position: absolute;
     top: 145px;  
-    left: 140px;
+    left: 190px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-
   }
-  .title {
+  .title{
     width: 288px;
     font-family: PingFangSC-Light;
-    font-size: 52px;
+    font-size: 45px;
     color: #FFFEFE;
     letter-spacing: 0;
     font-weight: 200;
     text-align: left;
   }
-  .english_title {
-    width: 658px;
-    height: 45px;
-    font-family: PingFangSC-Light;
-    font-size: 40px;
-    color: #FFFEFE;
-    letter-spacing: 0;
-    font-weight: 200;  
+  
+  .english_title{
+    width: 499px;
     text-align: left;
-  }
-  .subtitle {
-    width: 164px;
-    height: 25px;
     font-family: PingFangSC-Light;
-    font-size: 25px;
+    font-size: 35px;
     color: #FFFEFE;
     letter-spacing: 0;
     font-weight: 200;
+    margin-top: 20px;
+  }
+  .subtitle{
+    width: 176px;
     text-align: left;
+    font-family: PingFangSC-Light;
+    font-size: 18px;
+    color: #FFFEFE;
+    letter-spacing: 0;
+    font-weight: 200;
     margin-top: 50px;
-  } 
-
-  .tag {
-      display: flex;
-      height: auto;
-      flex-direction: column;
-      margin-top: 30px;
-      align-items: flex-end;
   }
 
-  .hot_title {
-    width: 160px;
-    height: 33px;
+ .content_aboutus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+
+  }
+
+ .us_text {
+    width: 80px;
+    height: 28px;
     font-family: PingFangSC-Medium;
-    font-size: 24px;
+    font-size: 20px;
     color: #050505;
     letter-spacing: 0;
     font-weight: 500;
-    align-self: center;
   }
-   
-  .hot_eng_title {
-    width: 160px;
+
+  .us_eng {
+    width: 184px;
+    height: 22px;
+    opacity: 0.36;
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    color: #050505;
+    letter-spacing: 0;
+    font-weight: 500;
+  }
+
+  .us_detail {
+    max-width: 1000px;
+    height: 152px;
+    font-family: Helvetica;
+    font-size: 16px;
+    color: #727272;
+    letter-spacing: 0;
+    line-height: 38px;
+    font-weight: 400;
+    margin-top: 30px;
+    text-align: left;
+    
+  }
+
+  .us_imgs {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin-top: 40px;
+  }
+
+  .coperations {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .coper_title {
+    width: 80px;
+    height: 28px;
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: #050505;
+    letter-spacing: 0;
+    font-weight: 500;
+  }
+
+  .coper_eng_title {
+    width: 195px;
     height: 22px;
     opacity: 0.36;
     font-family: PingFangSC-Medium;
@@ -442,67 +503,63 @@ export default {
     color: #050505;
     letter-spacing: 0;
     font-weight: 500;
-    align-self: center;
-  } 
-
-  .job_detail {
-    
-    width: 80%;
-    margin: 10px auto;
   }
 
-  .job_img {
+  .coper_imgs {
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 800px;
+      margin-top: 40px;
+  }
+
+  
+
+  .slogan_content {
     position: relative;
     width: auto;
     height: auto;
+    margin-top: 30px;
   }
 
-  .job_description {
+  .tags {
       position: absolute;
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      top: 120px;
-      left: 160px; 
-  }
+      justify-content: space-around;
+      flex-direction: row;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: auto;
+      transform: translate(-50%,-50%);
 
-  .wrap {
+  }
+  .tag_content {
       display: flex;
-      /* position: absolute; */
-      justify-content: flex-start;
-      align-items: flex-start;  
-      margin-top: 20px;
-      height: 42px;
-      width: 120px;
-     
-  } 
-  .d1 {
-    
-    /* width: 168px;
-    height: 59px; */
-    position: absolute;
-    font-family: PingFangSC-Medium;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+  }
+  .t1 {
+    width: 210px;
+    font-family: PingFangSC-Light;
+    font-size: 50px;
+    color: rgba(0,0,0,0.85);
+    letter-spacing: 0;
+    font-weight: 200;
+
+  }
+  .t2 {
+    width: 300px;
+    font-family: PingFangSC-Light;
     font-size: 30px;
-    color: #00B578;
+    color: rgba(0,0,0,0.85);
     letter-spacing: 0;
-    font-weight: 500;
-    text-align: left;
-    
+    font-weight: 200;
   }
-
-  .d2 {
-    /* width: 124px;
-    height: 44px; */
-    font-family: PingFangSC-Medium;
-    font-size: 20px;
-    color: #727272;
-    letter-spacing: 0;
-    font-weight: 500;
-    text-align: left;
-    margin: 15px 0;
-  }
-
 
   .login_dialog {
     width:1000px;
@@ -521,11 +578,11 @@ export default {
     align-items: center;
     justify-content: space-between;
   }
-  
+ 
   .footer {
     width: 100%;
     height: 250px;
-    margin-top: 30px;
+    margin-top: 100px;
     background-color: #3C3D40;
     color: #fff;
     display: flex;
