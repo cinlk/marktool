@@ -386,7 +386,7 @@ export default {
   .title {
     width: 288px;
     font-family: PingFangSC-Light;
-    font-size: 52px;
+    font-size: 45px;
     color: #FFFEFE;
     letter-spacing: 0;
     font-weight: 200;
@@ -396,7 +396,7 @@ export default {
     width: 658px;
     height: 45px;
     font-family: PingFangSC-Light;
-    font-size: 40px;
+    font-size: 35px;
     color: #FFFEFE;
     letter-spacing: 0;
     font-weight: 200;  
@@ -406,7 +406,7 @@ export default {
     width: 164px;
     height: 25px;
     font-family: PingFangSC-Light;
-    font-size: 25px;
+    font-size: 20px;
     color: #FFFEFE;
     letter-spacing: 0;
     font-weight: 200;

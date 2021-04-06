@@ -417,7 +417,7 @@ export default {
     width: 176px;
     text-align: left;
     font-family: PingFangSC-Light;
-    font-size: 18px;
+    font-size: 20px;
     color: #FFFEFE;
     letter-spacing: 0;
     font-weight: 200;
