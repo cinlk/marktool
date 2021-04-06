@@ -185,6 +185,19 @@
 export default {
   name: "main",
   inject:["reload"],
+  metaInfo: {
+    title: 'markhand',
+    meta: [
+      {
+          name: 'description',
+          content: 'sketch上最好用的标注工具，它是UI设计师必备的插件',
+      },
+      {
+          name: 'keywords',
+          content: 'sketch, UI, 切图, 标准, 设计, 分享, 工具'
+      }
+    ]
+  },
   data() {
     return {
       login_status: false,

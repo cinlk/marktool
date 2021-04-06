@@ -1,6 +1,8 @@
 import Vue from 'vue'
+import MetaInfo from 'vue-meta-info'
 import App from './App.vue'
 import router from './router'
+
 
 // import iView from 'iview'
 // import 'iview/dist/styles/iview.css'
@@ -14,7 +16,7 @@ import 'video.js/dist/video-js.css'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 Vue.use(ElementUI);
-
+Vue.use(MetaInfo)
 Vue.use(VideoPlayer)
 
 
