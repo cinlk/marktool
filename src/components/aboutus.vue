@@ -206,7 +206,7 @@ export default {
       },
       {
           name: 'keywords',
-          content: 'sketch, UI, 切图, 标准, 设计, 分享, 工具'
+          content: 'sketch, UI, 切图, 标注, 设计, 分享, 工具, 导出html设计稿'
       }
     ]
   },
