@@ -358,7 +358,7 @@ export default {
 
   .main {
     width: 100%;
-    margin: 40px auto;
+    margin: 20px auto;
   }
   .join {
     display: flex;
@@ -401,6 +401,7 @@ export default {
     letter-spacing: 0;
     font-weight: 200;  
     text-align: left;
+    margin-top: 20px;
   }
   .subtitle {
     width: 164px;
