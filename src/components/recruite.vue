@@ -376,7 +376,7 @@ export default {
   .banner_content {
     position: absolute;
     top: 145px;  
-    left: 140px;
+    left: 180px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
