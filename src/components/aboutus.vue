@@ -3,9 +3,19 @@
     <!-- header -->
     <div class="header">
 
-      <div>
-      <img src="../assets/icon.png" style="width: 40px; height: 30px;"/>
-      </div>  
+      <div class="icon_wrap">
+          <div>
+            <img src="../assets/icon.png" style="width: 40px; height: 30px;"/>
+          </div>
+           <div class="mk" @click="gotoHome">
+                首页
+          </div>
+      </div>
+
+    
+
+       
+
       <div class="login_register">
         <div class="login" @click="handleClickLogin">登录</div>
         <div class="register" @click="handleClickRegister">注册</div>
@@ -26,7 +36,7 @@
         <div class="content_aboutus">
             <div class="us_text">关于我们</div>
             <div class="us_eng">一 BOUT US 一</div>
-            <div class="us_detail">上海冰丰科技有限公司,是专门为企业、政府提供数字化软件云综合解決方案的公司。企业数字化是未来的大趋势,以新基建代表的数字化浪潮将为企业提升效益的同时节省更多的成本。我们公司依托北京大学实验室及北京和上海兄弟合作企业,通过自助研发的一套" Apilink-基于定义高可靠软件接口的分层开发的软件系统平台”,从云服务、应用层等开发抽象,可以为政府、企业的数字化软件开发提供快速及保质保量的软件服务。我们提供的服务包括智慧城市、智慧楼宇、智慧物联网云、企业办公效率软件等。团队核心成员来自北京大学及Top互联网企业。</div>
+            <div class="us_detail">上海冰丰科技有限公司,是专门为企业、政府提供数字化软件云综合解決方案的公司。企业数字化是未来的大趋势,以新基建代表的数字化浪潮将为企业提升效益的同时节省更多的成本。我们公司依托知名大学实验室及北京和上海兄弟合作企业,通过自助研发的一套" Apilink-基于定义高可靠软件接口的分层开发的软件系统平台”,从云服务、应用层等开发抽象,可以为政府、企业的数字化软件开发提供快速及保质保量的软件服务。我们提供的服务包括智慧城市、智慧楼宇、智慧物联网云、企业办公效率软件等。团队核心成员来自北京大学及Top互联网企业。</div>
             <div class="us_imgs">
               
                 <img src="../assets/e1.png" style="float: left; width: 30%;"/>
@@ -73,7 +83,7 @@
     <div class="footer">
       <div style="margin-bottom:89px; display:flex;flex-direction: column;">
         <div class="item">
-           <img style="width: 20px; height: 20px; margin-right:10px" src="../assets/privateDepoly.png">
+           <img style="width: 25px; height: 25px; margin-right:10px; object-fit:contain" src="../assets/privateDepoly.png">
             <div style="color: #FFFFFF;letter-spacing: 0; font-family: PingFangSC-Medium;font-size: 20px">
             私有化部署
             </div>
@@ -87,7 +97,7 @@
     
       <div style="margin-bottom:89px; display:flex; flex-direction: column;">
         <div class="item">
-          <img style="width: 20px; height: 20px; margin-right:10px" src="../assets/aboutus.png">
+          <img style="width: 25px; height: 25px; margin-right:10px; object-fit:contain" src="../assets/aboutus.png">
           <div style="color: #FFFFFF;letter-spacing: 0;font-family: PingFangSC-Medium;font-size: 20px" >关于我们</div>
         </div>
         <div class="item_text"  style="cursor:pointer" @click="gotoAboutus">
@@ -99,7 +109,7 @@
 
       <div style="margin-bottom:89px; display:flex; flex-direction: column;">
         <div class="item">
-           <img style="width: 20px; height: 20px; margin-right:10px" src="../assets/recruite.png">
+           <img style="width: 25px; height: 25px; margin-right:10px; object-fit:contain" src="../assets/recruite.png">
 
            <div style="color: #FFFFFF;letter-spacing: 0;font-family: PingFangSC-Medium;font-size: 20px">
             公司招聘
@@ -112,7 +122,7 @@
      
       <div style="margin-bottom:89px; display:flex; flex-direction: column;">
         <div class="item">
-           <img style="width: 20px; height: 20px; margin-right:10px" src="../assets/email.png">
+           <img style="width: 25px; height: 25px; margin-right:10px; object-fit:contain" src="../assets/email.png">
 
            <div style="color: #FFFFFF;letter-spacing: 0;font-family: PingFangSC-Medium;font-size: 20px">
             公司邮箱
@@ -127,7 +137,7 @@
 
       <div style="margin-bottom:89px; display:flex; flex-direction: column;">
         <div class="item">
-           <img style="width: 20px; height: 20px; margin-right:10px" src="../assets/address.png">
+           <img style="width: 25px; height: 25px; margin-right:10px; object-fit:contain" src="../assets/address.png">
 
            <div style="color: #FFFFFF;letter-spacing: 0;font-family: PingFangSC-Medium;font-size: 20px">
             公司地址
@@ -202,11 +212,11 @@ export default {
     meta: [
       {
           name: 'description',
-          content: 'sketch上最好用的标注工具，它是UI设计师必备的插件',
+          content: '基于标注切图的设计研发工具,提升产品研发效率',
       },
       {
           name: 'keywords',
-          content: 'sketch, UI, 切图, 标注, 设计, 分享, 工具, 导出html设计稿'
+          content: 'sketch, UI设计, 切图压缩, 自动标注, 一键分享, 协作工具'
       }
     ]
   },
@@ -278,6 +288,17 @@ export default {
           this.reload()
           window.open(url.href, '_blank')          
         } 
+    },
+    gotoHome() {
+      if (this.$route.name != "main"){
+        let url = this.$router.resolve(
+          {
+            path: "/"
+          }
+        )
+        this.reload();
+        window.open(url.href, '_blank')
+      }
     }
   }
 }
@@ -328,6 +349,23 @@ export default {
     width: 466px;
     height: 514px;
     opacity: 0.5;
+  }
+
+
+  .icon_wrap {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .mk {
+
+    width: 100px;
+    height: 30px;
+    color: black;
+    text-align: bottom;
+    letter-spacing: 0px;
+    font-size: 20px;
+
   }
   .login_register {
     display: flex;
@@ -630,9 +668,8 @@ export default {
     font-weight: 500;
     margin-top: 40px;
     text-align: left;
-    margin-left: 31px;
-    
-
-    
+    margin-left: 36px;
   }
+
+
 </style>

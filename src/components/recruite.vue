@@ -2,9 +2,16 @@
   <div class="content">
     <!-- header -->
     <div class="header">
-      <div>
-      <img src="../assets/icon.png" style="width: 40px; height: 30px;"/>
-      </div>  
+
+       <div class="icon_wrap">
+          <div>
+            <img src="../assets/icon.png" style="width: 40px; height: 30px;"/>
+          </div>
+           <div class="mk" @click="gotoHome">
+                首页
+          </div>
+      </div>
+
       <div class="login_register">
         <div class="login" @click="handleClickLogin">登录</div>
         <div class="register" @click="handleClickRegister">注册</div>
@@ -61,7 +68,7 @@
     <div class="footer">
       <div style="margin-bottom:89px; display:flex;flex-direction: column;">
         <div class="item">
-           <img style="width: 20px; height: 20px; margin-right:10px" src="../assets/privateDepoly.png">
+           <img style="width: 25px; height: 25px; margin-right:10px; object-fit:contain" src="../assets/privateDepoly.png">
             <div style="color: #FFFFFF;letter-spacing: 0; font-family: PingFangSC-Medium;font-size: 20px">
             私有化部署
             </div>
@@ -75,7 +82,7 @@
     
       <div style="margin-bottom:89px; display:flex; flex-direction: column;">
         <div class="item">
-          <img style="width: 20px; height: 20px; margin-right:10px" src="../assets/aboutus.png">
+          <img style="width: 25px; height: 25px; margin-right:10px; object-fit:contain" src="../assets/aboutus.png">
           <div style="color: #FFFFFF;letter-spacing: 0;font-family: PingFangSC-Medium;font-size: 20px" >关于我们</div>
         </div>
         <div class="item_text"  style="cursor:pointer" @click="gotoAboutus">
@@ -87,7 +94,7 @@
 
       <div style="margin-bottom:89px; display:flex; flex-direction: column;">
         <div class="item">
-           <img style="width: 20px; height: 20px; margin-right:10px" src="../assets/recruite.png">
+           <img style="width: 25px; height: 25px; margin-right:10px; object-fit:contain" src="../assets/recruite.png">
 
            <div style="color: #FFFFFF;letter-spacing: 0;font-family: PingFangSC-Medium;font-size: 20px">
             公司招聘
@@ -100,7 +107,7 @@
      
       <div style="margin-bottom:89px; display:flex; flex-direction: column;">
         <div class="item">
-           <img style="width: 20px; height: 20px; margin-right:10px" src="../assets/email.png">
+           <img style="width: 25px; height: 25px; margin-right:10px; object-fit:contain" src="../assets/email.png">
 
            <div style="color: #FFFFFF;letter-spacing: 0;font-family: PingFangSC-Medium;font-size: 20px">
             公司邮箱
@@ -115,7 +122,7 @@
 
       <div style="margin-bottom:89px; display:flex; flex-direction: column;">
         <div class="item">
-           <img style="width: 20px; height: 20px; margin-right:10px" src="../assets/address.png">
+           <img style="width: 25px; height: 25px; margin-right:10px; object-fit:contain" src="../assets/address.png">
 
            <div style="color: #FFFFFF;letter-spacing: 0;font-family: PingFangSC-Medium;font-size: 20px">
             公司地址
@@ -190,11 +197,11 @@ export default {
     meta: [
       {
           name: 'description',
-          content: 'sketch上最好用的标注工具，它是UI设计师必备的插件',
+          content: '基于标注切图的设计研发工具,提升产品研发效率',
       },
       {
           name: 'keywords',
-          content: 'sketch, UI, 切图, 标注, 设计, 分享, 工具, 导出html设计稿'
+          content: 'sketch, UI设计, 切图压缩, 自动标注, 一键分享, 协作工具'
       }
     ]
   },
@@ -303,12 +310,32 @@ export default {
     overflow: hidden;
   }
   .header {
+
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     width: 80%;
     margin: 0 auto;
   }
+
+
+  .icon_wrap {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .mk {
+
+    width: 100px;
+    height: 30px;
+    color: black;
+    text-align: bottom;
+    letter-spacing: 0px;
+    font-size: 20px;
+
+  }
+
+
   .header_img {
     position: absolute;
     top: 0px;
@@ -366,8 +393,6 @@ export default {
     font-size: 15px;
     text-align: center;
   }
-
-
 
   .main {
     width: 100%;
@@ -574,7 +599,7 @@ export default {
     font-weight: 500;
     margin-top: 40px;
     text-align: left;
-    margin-left: 31px;
+    margin-left: 36px;
     
 
     
