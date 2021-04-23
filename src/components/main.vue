@@ -15,11 +15,12 @@
         <img class="header_img" style="opacity: 0.8;" src="../assets/header.png">
         <div class="title_text">
           <div style="font-weight: bolder;font-family: Helvetica;letter-spacing: -1.44px;margin: bottom 30px;">
-            Markhand
+            Markhand-马可汗
           </div>
           <div style="font-size:50px;font-weight:600;">
             一键标注
           </div>
+          <div style="font-size:30px; font-weight:100">Sketchmeasure增强版</div>
             <div class="download_area">
               <a class="downLoad" href="/markhand.sketchplugin.zip" download="markhand.zip">
                 下载sketch插件

@@ -318,12 +318,11 @@ export default {
     margin: 0 auto;
   }
 
-
   .icon_wrap {
     display: flex;
     flex-direction: row;
   }
-  
+
   .mk {
 
     width: 100px;
