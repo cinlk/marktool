@@ -15,19 +15,19 @@
         <img class="header_img" style="opacity: 0.8;" src="../assets/header.png">
         <div class="title_text">
           <div style="font-weight: bolder;font-family: Helvetica;letter-spacing: -1.44px;margin: bottom 30px;">
-            Markhand-马可汗
+            繁星切图大师
           </div>
           <div style="font-size:50px;font-weight:600;">
-            一键标注
+            sketch切图神器
           </div>
-          <div style="font-size:30px; font-weight:100">Sketchmeasure增强版</div>
+          <!-- <div style="font-size:30px; font-weight:100">Sketchmeasure增强版</div> -->
             <div class="download_area">
-              <a class="downLoad" href="/markhand.sketchplugin.zip" download="markhand.zip">
+              <a class="downLoad"  download="markhand.zip">
                 下载sketch插件
               </a>
           <div style="display:flex;height:40px;align-items:center;">
             <div>
-              <a href="markhand_demo/index.html" target="_blank" style="color:black">查看示例</a>
+              <a href="demo/index.html" target="_blank" style="color:black">查看示例</a>
             </div>
             <div style="background-color: #04DDA3;border-radius:40px;margin-left:20px;">
               <svg style="font-size:40px" class="icon" aria-hidden="true">
@@ -172,11 +172,13 @@
 
    
     <div class="download_sketch">
-      <a href="/markhand.sketchplugin.zip" class="dowload_href"  download="markhand.zip">下载sketch插件</a>
+      <a  class="dowload_href"  download="markhand.zip">下载sketch插件</a>
     </div>
    
+   
+   <div class="footer"></div>
     <!-- foot -->
-    <div class="footer">
+    <!-- <div class="footer">
       <div style="margin-bottom:89px; display:flex;flex-direction: column;">
         <div class="item">
            <img style="width: 25px; height: 25px; margin-right:10px; object-fit:contain" src="../assets/privateDepoly.png">
@@ -227,10 +229,10 @@
          <div class="item_text">
             hr@bfengtech.com
           </div>
-      </div>
+      </div> -->
 
 
-
+<!-- 
       <div style="margin-bottom:89px; display:flex; flex-direction: column;">
         <div class="item">
            <img style="width: 25px; height: 25px; margin-right:10px;object-fit:contain" src="../assets/address.png">
@@ -242,17 +244,17 @@
          <div class="item_text">
            上海浦东新区祥科路58号A座719
           </div>
-      </div>
+      </div> -->
 
       <!-- <div style="margin-bottom:65px;">
         <img style="width:40px;" src="../assets/wechat.png" alt="">
       </div> -->
-    </div>
+    <!-- </div> -->
 
-
+<!-- 
        <div style="font-size:18px; padding-bottom:20px; background-color:#3C3D40;">
           <a href="https://beian.miit.gov.cn/" target="_blank" class="legal">上海冰丰科技有限公司 沪ICP备18044123号-5</a>
-       </div>
+       </div> -->
 
       <!-- 登录注册弹窗 -->
       <el-dialog
@@ -271,19 +273,52 @@
             <div @click="closeDialog" > 
               <img src="../assets/close.png" class="cancelButton">  
             </div>
-            <div style="font-size:15px;margin-top:70px;">
-              邮箱
+            <div style="font-size:15px;margin-top:70px;" v-if="!register_status">
+              手机号
             </div>
-            <el-input style="width:500px" placeholder="请输入邮箱" v-model="email"></el-input>
-            <div style="font-size:15px;margin-top:30px;">
+            
+            <el-input  placeholder="请输入手机号" v-model="loginData.phone"  v-if="!register_status"></el-input>
+            <div style="font-size:15px;margin-top:30px;" v-if="!register_status">
               密码
             </div>
-            <el-input placeholder="请输入密码" show-password v-model="password"></el-input>
+            <el-input placeholder="请输入密码" show-password v-model="loginData.password" v-if="!register_status"></el-input>
+            
+
+            <el-input  placeholder="请输入手机号" v-model="registryData.phone"  v-if="register_status"></el-input>
+
+            <el-input placeholder="请输入密码" show-password v-model="registryData.password" v-if="register_status"></el-input>
+
+            <!-- <div style="font-size:15px;margin-top:70px;">短信验证码</div> -->
+            <!-- <el-input placeholder="请输入短信验证码"  v-model="registryData.code" v-if="register_status"></el-input> -->
+
+            <div class="verify" v-if="register_status">
+                                <el-input   type="tel" class="inputs"  placeholder="短信验证码" v-model="registryData.code"></el-input>
+                                <el-button
+                                    type="primary"
+                                    @click="getVerify"
+                                    class="codeButton"
+                                    :disabled="disabled=!show"
+                                >
+                                <span v-show="show">获取验证码</span>
+                                <span v-show="!show">{{count}} s</span>
+                                </el-button>
+            </div>
+
+
+            <div class="verify" v-if="register_status">
+                    <el-input class="inputs" v-model="registryData.verifyCode"  placeholder="图形验证码" ></el-input>
+                    <div  @click="refreshCode()">
+                       <s-identify  :identifyCode="identifyCode"></s-identify >
+                    </div>
+                </div>
+
+
+
             <div class="login_button" style="font-size:10px;margin-top:20px;width: 400px;">
               <div @click="handleClickChange">
-                {{ register_status?'已有账号':'忘记密码?' }}
+                {{ register_status?'已有账号':'新用户注册' }}
               </div>
-              <div class="loginButton">
+              <div class="loginButton" @click="trigger">
                 {{ register_status?'注册':'登录' }}
               </div>
             </div>
@@ -304,7 +339,7 @@ export default {
   name: "main",
   inject:["reload"],
   metaInfo: {
-    title: 'markhand',
+    title: '繁星切图',
     meta: [
       {
           name: 'description',
@@ -321,8 +356,21 @@ export default {
     return {
       login_status: false,
       register_status: false,
-      email: '',
-      password: '',
+      loginData:{
+            phone: '',
+            password: '',
+      },
+      registryData:{
+          phone:"",
+          code:"",
+          password:"",
+          verifyCode:""
+      },
+      identifyCodes: "1234567890",
+      identifyCode: "",
+      show: true,
+      count:"",
+      timer:null,
       playerOptions: {
             playbackRates: [0.5, 1.0, 1.5, 2.0], // 可选的播放速度
             autoplay: false, // 如果为true,浏览器准备好时开始回放。
@@ -347,7 +395,133 @@ export default {
           }
     }
   },
+  mounted(){
+    this.identifyCode = "";
+    this.makeCode(this.identifyCodes, 4);
+  },
   methods: {
+
+      trigger(){
+          if (this.register_status == false){
+              if (this.checkPhone(this.loginData.phone) == false){
+                return
+              }
+              if (this.checkPassword(this.loginData.password) == false){
+
+                this.$message.error("密码必须大于6位")
+
+                return
+              }
+
+          }else if (this.register_status){
+              if (this.checkPhone(this.registryData.phone) == false){
+                return
+              }
+              if (this.checkPassword(this.registryData.password) == false){
+                this.$message.error("密码必须大于6位")
+                  return
+              }
+
+              if(this.identifyCode != this.registryData.verifyCode){
+                this.$message.error("图形验证码错误")
+                return
+              }
+              if(this.registryData.code.length !=6  || !/^[0-9]+\.?[0-9]*$/.test(this.registryData.code)){
+                   this.$message.error("请填写正确的验证码");
+                    return
+                }
+
+          }
+      },
+      randomNum(min, max) {
+                return Math.floor(Math.random() * (max - min) + min);
+            },
+        refreshCode() {
+          this.identifyCode = "";
+          this.makeCode(this.identifyCodes, 4);
+        },
+
+        makeCode(o, l) {
+          for (let i = 0; i < l; i++) {
+            this.identifyCode += this.identifyCodes[
+              this.randomNum(0, this.identifyCodes.length)
+            ];
+          }
+            //console.log(this.identifyCode);
+    },
+
+     checkPhone(phone) {
+            //let phone = this.registryData.phone;
+            if (!/^1[3456789]\d{9}$/.test(phone)) {
+                this.$message.error("请填写正确的手机号");
+                return false;
+            }
+
+
+        },
+
+        checkPassword(pw){
+          pw = pw.trim()
+
+          if (pw.length <= 6){
+            return false
+          }
+          return true 
+        },
+
+
+        getVerify() {
+            // 验证手机号
+            if (this.checkPhone(this.registryData.phone) == false) {
+                return false;
+            } else {
+                 // 发送验证码请求
+                // var _this = this;
+                // this.$axios.post("sms",{
+                //      type:"registry",
+                //      phone: _this.registryData.phoneNum
+                // }).then(function (res) {
+                //     // http status OK 被axios 进行了处理，这只http为ok才有数据处理 ？
+                    
+                //     if (res.data && res.data.code == 200){
+                //         _this.$message.success("发送验证码成功");
+                //     }else if(res.response){
+                //         if (res.response.data.code == 409){
+                //          _this.$message.error("账号已存在");
+
+                //         }else{
+                //          _this.$message.error("发送验证码错误");
+
+                //         }
+                //     }
+                   
+                // }).catch(function (error) {
+                //     //console.log(error) 区分不同错误类型？
+                //     _this.$message.error("发送验证码异常");
+                // });
+
+
+
+                const TIME_COUNT = 60; //更改倒计时时间
+                if (!this.timer) {
+                    this.count = TIME_COUNT;
+                    this.show = false;
+                    this.timer = setInterval(() => {
+                        if (this.count > 0 && this.count <= TIME_COUNT) {
+                            this.count--;
+                        } else {
+                            this.show = true;
+                            clearInterval(this.timer); // 清除定时器
+                            this.timer = null;
+                        }
+                    }, 1000);
+                }
+            }
+        },
+
+
+
+
     handleClickLogin() {
       this.login_status = true
       this.register_status = false
@@ -487,6 +661,10 @@ export default {
   }
 
 
+.el-input{
+  height: 50px;
+  margin-top:10px
+}
   .title {
     margin-top: 100px;
     padding-right: 24px;
@@ -619,6 +797,35 @@ export default {
     align-items: center;
     justify-content: space-between;
   }
+
+.inputs{
+  width: 50%;
+  display: inline-flex;
+  margin-right: 10px;
+}
+
+.verify {
+    
+      width: 100%;
+      /* height: 40px; */
+      border-radius: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      justify-items: center;
+    }
+
+
+    .codeButton{
+        
+        /* width: 130px; */
+        height: 40px;
+        align-self: right;
+        margin-bottom: 10px;
+        
+    }
+
+
   .download_sketch {
 
     margin: 10px auto;
@@ -635,7 +842,7 @@ export default {
   }
   .footer {
     width: 100%;
-    height: 250px;
+    height: 50px;
     margin-top: 100px;
     background-color: #3C3D40;
     color: #fff;
