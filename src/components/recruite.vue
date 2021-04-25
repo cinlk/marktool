@@ -193,17 +193,8 @@ export default {
   name: "main",
   inject:["reload"],
   metaInfo: {
-    title: 'markhand',
-    meta: [
-      {
-          name: 'description',
-          content: '基于标注切图的设计研发工具,提升产品研发效率',
-      },
-      {
-          name: 'keywords',
-          content: 'sketch, UI设计, 切图压缩, 自动标注, 一键分享, 协作工具'
-      }
-    ]
+    title: '繁星切图',
+    meta: []
   },
   data() {
     return {
