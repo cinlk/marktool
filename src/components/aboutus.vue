@@ -208,7 +208,7 @@ export default {
   name: "main",
   inject:["reload"],
   metaInfo: {
-    title: '繁星切图',
+    title: '锡兰切图',
     meta: []
   },
   data() {

@@ -15,7 +15,7 @@
         <img class="header_img" style="opacity: 0.8;" src="../assets/header.png">
         <div class="title_text">
           <div style="font-weight: bolder;font-family: Helvetica;letter-spacing: -1.44px;margin: bottom 30px;">
-            繁星切图大师
+            锡兰切图大师
           </div>
           <div style="font-size:50px;font-weight:600;">
             sketch切图神器
@@ -339,7 +339,7 @@ export default {
   name: "main",
   inject:["reload"],
   metaInfo: {
-    title: '繁星切图',
+    title: '锡兰切图',
     meta: []
   },
   
