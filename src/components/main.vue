@@ -176,7 +176,10 @@
     </div>
    
    
-   <div class="footer"></div>
+   <div class="footer">
+     <a href="http://service.weibo.com/share/share.php?appkey=3033616782&title=分享&url=www.burglin.work&searchPic=false&style=simple" target="_blank"><img style="width:50px;height:50px" src="../assets/weibo.png" alt="wechat"> 分享到微博</a>
+
+   </div>
     <!-- foot -->
     <!-- <div class="footer">
       <div style="margin-bottom:89px; display:flex;flex-direction: column;">
